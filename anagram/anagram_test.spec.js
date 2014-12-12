@@ -58,14 +58,14 @@ describe('Anagram', function() {
     expect(matches).toEqual(['Carthorse']);
   });
 
-  xit("does not detect a word as its own anagram",function() {
+  it("does not detect a word as its own anagram",function() {
     var subject = anagram("banana");
     var matches = subject.matches(['Banana']);
 
     expect(matches).toEqual([]);
   });
 
-  xit("matches() accepts string arguments",function() {
+  it("matches() accepts string arguments",function() {
     var subject = anagram("ant");
     var matches = subject.matches("stand", "tan", "at");
 
